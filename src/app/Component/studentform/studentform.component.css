@@ -1,0 +1,21 @@
+table {
+    width: 100%;
+  }
+  
+  .mat-mdc-form-field {
+    font-size: 14px;
+    width: 100%;
+  }
+  
+  td, th {
+    width: 25%;
+  }
+  button{
+    margin: 5px;
+  }
+  .delete{
+    display: flex;
+    width: 250px;
+    height: 55px;
+
+  }

@@ -1,0 +1,24 @@
+.parent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    }
+    mat-card{
+        height: 320px;
+        width: 400px;
+    }
+    mat-toolbar{
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    mat-form-field{
+        width: 100%;
+    
+    }
+    .content{
+        padding: 10px;
+    }
+    .but{
+        text-align: center;
+    }

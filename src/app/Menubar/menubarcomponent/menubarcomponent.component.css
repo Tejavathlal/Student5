@@ -1,0 +1,18 @@
+
+
+.example-spacer {
+    flex: 1 1 auto;
+  }
+  .example-container {
+    width: 400px;
+    height: 200px;
+    margin: 10px;
+    border: 1px solid #555;
+  }
+  button{
+    margin-right: 10px;
+  }
+  .but{
+    text-align: center;
+    margin-top: 15px;
+  }

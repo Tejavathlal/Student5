@@ -1,0 +1,38 @@
+<mat-toolbar color="primary" class="mat-elevation-z8">
+    <button (click)="drawer.toggle()" mat-icon-button>
+        <mat-icon>menu</mat-icon></button>
+    <span>Student Form</span>
+    <span class="example-spacer"></span>
+    <button mat-raised-button routerLink="login" color="accent">Login</button>
+    <button mat-raised-button routerLink="createstudent" color="accent">Create</button>
+    <button mat-raised-button routerLink="student" color="accent">Student</button>
+</mat-toolbar>
+
+<mat-drawer-container autosize>
+    <mat-drawer #drawer mode="side" opened="false" position="start">
+        <mat-nav-list>
+
+            <mat-list-item>
+                <button mat-button><mat-icon>dashboard</mat-icon>Dashboard</button>
+            </mat-list-item>
+            <hr>
+            <mat-list-item>
+                <button mat-button routerLink="createstudent"><mat-icon>dashboard</mat-icon>Create Student</button>
+            </mat-list-item>
+
+            <mat-list-item>
+                <button mat-button routerLink="studentform"><mat-icon>dashboard</mat-icon>Student Form</button>
+            </mat-list-item>
+
+        </mat-nav-list>
+        <hr>
+        <div class="but">
+            <button mat-raised-button color="warn" (click)="logout()">Logout</button>
+        </div>
+    </mat-drawer>
+    <mat-drawer-content>
+        <div style="text-align: center; min-height: 600px;">
+            <router-outlet></router-outlet>
+        </div>
+    </mat-drawer-content>
+</mat-drawer-container>
